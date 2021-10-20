@@ -9,7 +9,7 @@ terraform {
 #deploying ressource group
 provider "azurerm"{
    features {}
-   tenant_id = "12e2dd65-5024-44c2-83b5-3ca21c04ef0e"
+   tenant_id = ""
 }
 resource "azurerm_resource_group" "rg"{
    name = "Terraform-resource"
