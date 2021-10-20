@@ -10,7 +10,7 @@ terraform {
 #deploying configure tenant
 provider "azurerm"{
    features {}
-   tenant_id = "12e2dd65-5024-44c2-83b5-3c"
+   tenant_id = ""
 }
 
 #create resource group
@@ -84,7 +84,7 @@ resource "azurerm_data_factory_linked_service_data_lake_storage_gen2" "df-to-dl"
   data_factory_name     = azurerm_data_factory.df.name
   service_principal_id  = data.azurerm_client_config.current.client_id
   service_principal_key = "exampleKey"
-  tenant                = "12e2dd65-5024-44c2-83b5-3ca"
+  tenant                = ""
   url                   = "https://datalakestoragegen2"
 }
 
